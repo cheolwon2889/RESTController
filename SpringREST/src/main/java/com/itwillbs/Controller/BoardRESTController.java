@@ -45,9 +45,9 @@ import io.swagger.annotations.ApiOperation;
 // http://localhost:8088/swagger-ui/index.html
 
 @RestController
-//@RequestMapping("/boards")
-@RequestMapping("/api")
-@Api(tags = "게시판 REST컨트롤러 ")
+@RequestMapping("/boards")
+//@RequestMapping("/api")
+//@Api(tags = "게시판 REST컨트롤러 ")
 public class BoardRESTController {
 	
 
@@ -81,7 +81,7 @@ public class BoardRESTController {
 	}
 	// 글목록 전부(all) 조회
 	// 글 조회 : /boards/all GET방식(ALL)
-	@ApiOperation(value = "게시판 목록 조회", notes = "모든 게시판의 목록을 조회합니다.")
+	//@ApiOperation(value = "게시판 목록 조회", notes = "모든 게시판의 목록을 조회합니다.")
 	@RequestMapping(value="/all", method= RequestMethod.GET)
 	public ResponseEntity<List<BoardVO>> listAllBoard() {
 		logger.info("listAllBoard() 호출 ");
