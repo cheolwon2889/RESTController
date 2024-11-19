@@ -21,7 +21,8 @@ ${map}
 <c:forEach var="file" items="${map.fileList}">
 <%-- 파일 :<a href="/C:/upload/${file}"> ${file}</a> <br> --%>
 파일 :<a href="/file/download?fileName=${file}"> ${file}</a> <br>
-<img alt="" src="/file/download?fileName=${file}">
+<img alt="" src="/file/download?fileName=${file}"><br>
+썸네일 :  <img alt="" src="/file/thDownload?fileName=${file}">
 </c:forEach>
 
 <a href="/file/form"> 다시 업로드</a>
